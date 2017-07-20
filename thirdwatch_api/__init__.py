@@ -25,6 +25,7 @@ from .models.custom_info import CustomInfo
 from .models.error_response import ErrorResponse
 from .models.event_response import EventResponse
 from .models.item import Item
+from .models.item_status import ItemStatus
 from .models.link_session_to_user import LinkSessionToUser
 from .models.login import Login
 from .models.logout import Logout
@@ -50,6 +51,7 @@ from .apis.chargeback_api import ChargebackApi
 from .apis.create_account_api import CreateAccountApi
 from .apis.create_order_api import CreateOrderApi
 from .apis.custom_event_api import CustomEventApi
+from .apis.item_status_api import ItemStatusApi
 from .apis.link_session_to_user_api import LinkSessionToUserApi
 from .apis.login_api import LoginApi
 from .apis.logout_api import LogoutApi

@@ -7,6 +7,7 @@ from .chargeback_api import ChargebackApi
 from .create_account_api import CreateAccountApi
 from .create_order_api import CreateOrderApi
 from .custom_event_api import CustomEventApi
+from .item_status_api import ItemStatusApi
 from .link_session_to_user_api import LinkSessionToUserApi
 from .login_api import LoginApi
 from .logout_api import LogoutApi

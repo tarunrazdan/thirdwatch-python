@@ -13,33 +13,32 @@
 
 from __future__ import absolute_import
 
-# import models into model package
-from .add_promotion import AddPromotion
-from .add_to_cart import AddToCart
-from .billing_address import BillingAddress
-from .chargeback import Chargeback
-from .create_account import CreateAccount
-from .create_order import CreateOrder
-from .custom import Custom
-from .custom_info import CustomInfo
-from .error_response import ErrorResponse
-from .event_response import EventResponse
-from .item import Item
-from .item_status import ItemStatus
-from .link_session_to_user import LinkSessionToUser
-from .login import Login
-from .logout import Logout
-from .order_status import OrderStatus
-from .payment_method import PaymentMethod
-from .promotion import Promotion
-from .remove_from_cart import RemoveFromCart
-from .report_item import ReportItem
-from .seller import Seller
-from .send_message import SendMessage
-from .shipping_address import ShippingAddress
-from .submit_review import SubmitReview
-from .tag import Tag
-from .transaction import Transaction
-from .un_tag import UnTag
-from .update_account import UpdateAccount
-from .update_order import UpdateOrder
+import os
+import sys
+import unittest
+
+import thirdwatch_api
+from thirdwatch_api.rest import ApiException
+from thirdwatch_api.apis.item_status_api import ItemStatusApi
+
+
+class TestItemStatusApi(unittest.TestCase):
+    """ ItemStatusApi unit test stubs """
+
+    def setUp(self):
+        self.api = thirdwatch_api.apis.item_status_api.ItemStatusApi()
+
+    def tearDown(self):
+        pass
+
+    def test_item_status(self):
+        """
+        Test case for item_status
+
+        Use item_status to update the status of item that you’ve already pass to Thirdwatch.
+        """
+        pass
+
+
+if __name__ == '__main__':
+    unittest.main()

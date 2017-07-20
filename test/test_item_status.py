@@ -13,33 +13,30 @@
 
 from __future__ import absolute_import
 
-# import models into model package
-from .add_promotion import AddPromotion
-from .add_to_cart import AddToCart
-from .billing_address import BillingAddress
-from .chargeback import Chargeback
-from .create_account import CreateAccount
-from .create_order import CreateOrder
-from .custom import Custom
-from .custom_info import CustomInfo
-from .error_response import ErrorResponse
-from .event_response import EventResponse
-from .item import Item
-from .item_status import ItemStatus
-from .link_session_to_user import LinkSessionToUser
-from .login import Login
-from .logout import Logout
-from .order_status import OrderStatus
-from .payment_method import PaymentMethod
-from .promotion import Promotion
-from .remove_from_cart import RemoveFromCart
-from .report_item import ReportItem
-from .seller import Seller
-from .send_message import SendMessage
-from .shipping_address import ShippingAddress
-from .submit_review import SubmitReview
-from .tag import Tag
-from .transaction import Transaction
-from .un_tag import UnTag
-from .update_account import UpdateAccount
-from .update_order import UpdateOrder
+import os
+import sys
+import unittest
+
+import thirdwatch_api
+from thirdwatch_api.rest import ApiException
+from thirdwatch_api.models.item_status import ItemStatus
+
+
+class TestItemStatus(unittest.TestCase):
+    """ ItemStatus unit test stubs """
+
+    def setUp(self):
+        pass
+
+    def tearDown(self):
+        pass
+
+    def testItemStatus(self):
+        """
+        Test ItemStatus
+        """
+        model = thirdwatch_api.models.item_status.ItemStatus()
+
+
+if __name__ == '__main__':
+    unittest.main()

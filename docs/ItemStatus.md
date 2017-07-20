@@ -1,4 +1,4 @@
-# OrderStatus
+# ItemStatus
 
 ## Properties
 Name | Type | Description | Notes
@@ -6,7 +6,8 @@ Name | Type | Description | Notes
 **user_id** | **str** | The user&#39;s account ID according to your systems. Note that user IDs are case sensitive. | [optional] 
 **session_id** | **str** | The user&#39;s current session ID, used to tie a user&#39;s action before and after login or account creation. Required if no user_id values is provided. | [optional] 
 **order_id** | **str** | The ID for the order that this chargeback is filed against. This field is not required if this chargeback was filed against a transaction with no _orderId. | [optional] 
-**order_status** | **str** | Indicates the high-level state of the order. e.g. _approved, _canceled, _held, _fulfilled, _returned, _rto | [optional] 
+**item_id** | **str** | The item&#39;s unique identifier according to your systems. Use the same ID that you would use to look up items on your website&#39;s database. | [optional] 
+**item_status** | **str** | Indicates the high-level state of the order. e.g. _approved, _canceled, _held, _fulfilled, _returned, _rto | [optional] 
 **reason** | **str** | The reason for a cancellation. e.g. _paymentRisk, _abuse, _policy, _other | [optional] 
 **shipping_cost** | **str** | if _approved or _fulfilled than pass the shipping cost. e.g. \&quot;50\&quot; | [optional] 
 **tracking_number** | **str** | if _approved or _fulfilled than pass the tracking number. e.g. \&quot;55327470\&quot; | [optional] 
