@@ -4,7 +4,7 @@ All URIs are relative to *https://api.thirdwatch.ai/event*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**item_status**](ItemStatusApi.md#item_status) | **POST** /event/item_status | Use item_status to update the status of item that you’ve already pass to Thirdwatch.
+[**item_status**](ItemStatusApi.md#item_status) | **POST** /v1/item_status | Use item_status to update the status of item that you’ve already pass to Thirdwatch.
 
 
 # **item_status**

@@ -108,7 +108,7 @@ class ItemStatusApi(object):
 
         collection_formats = {}
 
-        resource_path = '/event/item_status'.replace('{format}', 'json')
+        resource_path = '/v1/item_status'.replace('{format}', 'json')
         path_params = {}
 
         query_params = {}

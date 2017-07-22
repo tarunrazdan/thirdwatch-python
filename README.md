@@ -14,7 +14,7 @@ For instance: you can send event at the moment by ```HTTP POST``` Request to the
 Every API request must contain ```API Key``` in header value ```X-THIRDWATCH-API-KEY```  Every event must contain your ```_userId``` (if this is not available, you can alternatively provide a ```_sessionId``` value also in ```_userId```). 
 
 - API version: 0.0.1
-- Package version: 0.0.2
+- Package version: 0.0.3
 - Build package: io.swagger.codegen.languages.PythonClientCodegen
 
 ## Requirements.
@@ -90,7 +90,7 @@ Class | Method | HTTP request | Description
 *CreateAccountApi* | [**create_account**](docs/CreateAccountApi.md#create_account) | **POST** /v1/create_account | Use create_account to pass user details at user registration.
 *CreateOrderApi* | [**create_order**](docs/CreateOrderApi.md#create_order) | **POST** /v1/createOrder | Submit a new or existing order to Thirdwatch for review. This API should contain order item info, the payment info, and user identity info.
 *CustomEventApi* | [**custom_event**](docs/CustomEventApi.md#custom_event) | **POST** /v1/custom_event | Use order_status to track the order processing workflow of a previously submitted order.
-*ItemStatusApi* | [**item_status**](docs/ItemStatusApi.md#item_status) | **POST** /event/item_status | Use item_status to update the status of item that you’ve already pass to Thirdwatch.
+*ItemStatusApi* | [**item_status**](docs/ItemStatusApi.md#item_status) | **POST** /v1/item_status | Use item_status to update the status of item that you’ve already pass to Thirdwatch.
 *LinkSessionToUserApi* | [**link_session_to_user**](docs/LinkSessionToUserApi.md#link_session_to_user) | **POST** /v1/link_session_to_user | Use link_session_to_user to associate specific session to a user. Generally used only in anonymous checkout workflows.
 *LoginApi* | [**login**](docs/LoginApi.md#login) | **POST** /v1/login | Use login to record when a user attempts to log in.
 *LogoutApi* | [**logout**](docs/LogoutApi.md#logout) | **POST** /v1/logout | Use logout to record when a user logs out.
