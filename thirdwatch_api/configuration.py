@@ -45,7 +45,7 @@ class Configuration(object):
         Constructor
         """
         # Default Base url
-        self.host = "https://api.thirdwatch.ai/event"
+        self.host = "http://api.thirdwatch.co/event"
         # Default api client
         self.api_client = None
         # Temp file folder for downloading files
